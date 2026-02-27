@@ -201,6 +201,11 @@ XDB_PUBLIC(int) xdb_v6_ip_to_string(const bytes_ip_t *, char *, size_t);
 // returns: -1 if ip1 < ip2, 1 if ip1 > ip2 or 0
 XDB_PUBLIC(int) xdb_ip_sub_compare(const bytes_ip_t *, int, const char *, int);
 
+// large file seek and tell
+XDB_PUBLIC(int) xdb_fseek(FILE *, long long, int);
+
+XDB_PUBLIC(long long) xdb_ftell(FILE *);
+
 // --- END xdb utils
 
 
